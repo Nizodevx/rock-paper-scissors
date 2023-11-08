@@ -20,6 +20,8 @@ function playRound(playerSelection, computerSelection) {
         return "You lost"
     }else if (playerSelection=="Rock" && computerSelection=="Rock"){
         return "Draw"
+    }else if (playerSelection=="Rock" && computerSelection=="Scissors"){
+        return "You win"
     }else if (playerSelection=="Paper" && computerSelection=="Scissors"){
         return "YOu lost"
     }else if (playerSelection=="Paper" && computerSelection=="Rock"){
@@ -32,8 +34,16 @@ function playRound(playerSelection, computerSelection) {
         return "You lost"
     }else if (playerSelection=="Scissors" && computerSelection=="Paper"){
         return "You win"
-    }
+    };
         
 }
+function game() {
+    for (let i=0; i <= 5; i++){
+        console.log(getComputerChoice());
+        console.log(playRound());
+    }
+}
 
-console.log(playRound())
+
+console.log(game())
+
