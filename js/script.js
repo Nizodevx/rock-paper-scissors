@@ -5,13 +5,13 @@ function getComputerChoice () {
 }
 
 
-let getPlayerInput = prompt();
+let playerInput = prompt();
 
 console.log(getComputerChoice())
 
 function playRound(playerSelection, computerSelection) {
    
-    playerSelection = getPlayerInput
+    playerSelection = playerInput
     computerSelection = getComputerChoice()
     
     if (playerSelection=="Rock" && computerSelection=="Scissors") {
