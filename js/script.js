@@ -5,13 +5,13 @@ function getComputerChoice () {
 }
 
 
-let playerinput = prompt();
+let getPlayerInput = prompt();
 
 console.log(getComputerChoice())
 
 function playRound(playerSelection, computerSelection) {
    
-    playerSelection = playerinput
+    playerSelection = getPlayerInput
     computerSelection = getComputerChoice()
     
     if (playerSelection=="Rock" && computerSelection=="Scissors") {
@@ -37,7 +37,7 @@ function playRound(playerSelection, computerSelection) {
     };
         
 }
-function game() {
+function reloadGame() {
     for (let i=0; i <= 5; i++){
         console.log(getComputerChoice());
         console.log(playRound());
@@ -45,5 +45,5 @@ function game() {
 }
 
 
-console.log(game())
+console.log(reloadGame())
 
